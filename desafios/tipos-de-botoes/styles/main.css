@@ -15,8 +15,8 @@
 }
 
 * {
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -26,38 +26,40 @@
 }
 
 html, body {
+    width: 100vw;
     height: 100vh;
-    min-height: 690px;
-
+    min-height: 800px;
+    overflow: hidden;
     background-color: var(--color-BG);
 }
 
 main {
-    display: flex;
+    position: relative;
     height: 100%;
 }
 
-#button-types {
-    position: relative;
+#margin {
+    width: fit-content;
+    margin: 99px auto;
+}
 
+#button-types {
     width: calc(100% - 30%);
-    
+    height: fit-content;
+
+    position: absolute;
 }
 
 #button-test{
     width: 30%;
     height: 100%;
+    padding: 99px 44px;
 
     background-color: var(--color-BG-2);
 
-    position: relative;
-}
-
-#test-title {
     position: absolute;
-    top: 107px;
-    margin: 0px 44px;
-    padding: 0;
+    top: 0px;
+    right: 0px;
 }
 
 .text-container {
@@ -66,12 +68,6 @@ main {
     align-items: flex-start;
     padding: 0px 0px 32px;
     gap: 8px;
-}
-
-#title-cont {
-    position: absolute;
-    top: 107px;
-    left: 190px;
 }
 
 h1 {
@@ -92,10 +88,6 @@ p, span {
     border: 7px solid var(--color-borda);
     width: fit-content;
     border-radius: 8px;
-
-    position: absolute;
-    top: 261px;
-    left: 190px;
 }
 
 
@@ -231,7 +223,7 @@ span.movable, button.movable {
     width: 100%;
     display: grid;
     place-content: center;
-    gap: 8px;
+    gap: 22px;
     margin-top: 30px;
 }
 
@@ -294,74 +286,32 @@ button:disabled {
 /*-------------------------MEDIA QUERIES-----------------------------*/
 
 @media (max-width: 1500px) {
-    main {
-        display: initial;
-    }
     #button-types {
         display: none;
     }
 
-    #button-test {
-        display: grid;
-        justify-content: center;
-
-        width: 100vw;
-
-        padding-top: 25px;
-    }
-
     #test-title {
-        position: static;
+        width: fit-content;
+        margin: auto;
     }
 
-    .text-container {
-        gap: 20px;
+    #button-test {
+
+        width: 100%;
+
+        padding: 25px;
     }
 }
 
 @media (max-width: 1700px) {
-    #button-types {
-        position: static;
-        height: fit-content;
-    }
-    #title-cont {
-        position: static;
-        width: fit-content;
-        margin: auto;
+    #margin {
         margin-top: 25px;
     }
-
-    #button-test {
-        position: static;
-    }
-
-    #test-title {
-        position: static;
-        margin-top: 25px;
-    }
-
-    #button-table {
-        position: static;
-        margin: auto;
-    }  
-
-    #header span {
+    #header span, .buttons-display span {
         font-size: 10px;
     }
 
-    #left-container {
+    #left-container, .buttons-display {
         gap: 20px;
-    }
-
-    .buttons-display {
-        gap: 20px;
-    }
-
-    .buttons-display span {
-        font-size: 10px;
-    }
-
-    #button-wrap {
-        gap: 22px;
     }
 }
