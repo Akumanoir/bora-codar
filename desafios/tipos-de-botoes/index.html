@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700&family=Roboto&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botões e cursores</title>
+
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body>
+    <main>
+        <section id="button-types">
+            <div class="text-container" id="title-cont">
+                <h1>Tipos de botão</h1>
+                <p>Dentro de um layout, botões servem para destacar ações importantes a serem tomadas. <br>Acompanhe abaixo um exemplo de tipos e prioridades.</p>
+            </div>
+            <div id="button-table">
+                <div id="left-container">
+                        <span>DEFAULT</span>
+                        <span>HOVER</span>
+                        <span>FOCUS</span>
+                        <span>DISABLED</span>
+                        <span>LOADING</span>
+                        <span>MOVABLE</span>
+                </div>
+                <div id="right-container">
+                        <div id="header">
+                            <span>BOTÃO PRIMÁRIO</span>
+                            <span>BOTÃO SECUNDÁRIO</span>
+                            <span>BOTÃO TERCIÁRIO</span>
+                            <span>CURSOR</span>
+                        </div>
+                        <div class="buttons-display">
+                            <span class="primary">DEFAULT PRIMARY</span>
+                            <span class="secondary">DEFAULT SECUNDARY</span>
+                            <span class="tertiary">DEFAULT TERTIARY</span>
+                            <img src="assets/cursor.svg" alt="cursor">
+                        
+                        
+                            <span id="hover-primary">HOVER PRIMARY</span>
+                            <span id="hover-secondary">HOVER SECUNDARY</span>
+                            <span>HOVER TERTIARY</span>
+                            <img src="assets/cursor.svg" alt="cursor">
+                        
+                        
+                            <span class="primary focus">FOCUS PRIMARY</span>
+                            <span class="secondary focus">FOCUS SECUNDARY</span>
+                            <span class="tertiary focus">FOCUS TERTIARY</span>
+                            <img src="assets/cursor.svg" alt="cursor">
+                        
+                        
+                            <span class="primary disabled">DISABLED PRIMARY</span>
+                            <span class="secondary disabled">DISABLED SECUNDARY</span>
+                            <span class="tertiary disabled">DISABLED TERTIARY</span>
+                            <img src="assets/disabled-cursor.svg" alt="cursor">
+                        
+                        
+                            <span class="primary loading"><i class="ph ph-circle-notch"></i>LOADING PRIMARY</span>
+                            <span class="secondary loading"><i class="ph ph-circle-notch"></i>LOADING SECUNDARY</span>
+                            <span class="tertiary loading"><i class="ph ph-circle-notch"></i>LOADING TERTIARY</span>
+                            <img src="assets/loading-cursor.svg" alt="cursor">
+                        
+                        
+                            <span class="primary movable"><img src="assets/movable.png" alt="movable image">MOVABLE PRIMARY</span>
+                            <span class="secondary movable"><img src="assets/movable.png" alt="movable image">MOVABLE SECUNDARY</span>
+                            <span class="tertiary movable"><img src="assets/movable.png" alt="movable image">MOVABLE TERTIARY</span>
+                            <img src="assets/movable-cursor.svg" alt="cursor">
+                        </div>
+                </div>
+            </div>   
+        </section>
+        <section id="button-test">
+            <div class="text-container" id="test-title">
+                <h1>Teste de botões</h1>
+                <p>Interaja com os botões e observe a mudança de aparência e de cursores.</p>
+
+                <div id="button-wrap">
+                    <button type="button" class="primary">
+                        DEFAULT
+                    </button>
+                    <button type="button" class="primary" disabled>
+                        DISABLED
+                    </button>
+                    <button type="button" class="primary loading">
+                        <i class="ph ph-circle-notch"></i>
+                        LOADING
+                    </button>
+                    <button type="button" class="primary movable">
+                        <i class="ph ph-list"></i>
+                        MOVABLE
+                    </button>
+                    <button type="button" class="primary" onclick="toggle()">
+                        MUDAR TIPO DE BOTÃO
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>
