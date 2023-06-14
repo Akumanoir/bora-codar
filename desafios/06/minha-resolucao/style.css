@@ -1,0 +1,150 @@
+@charset "UTF-8";
+
+:root {
+    font-size: 62.5%; /* 1rem = 10px */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+html, body {
+    width: 100vw;
+    height: 100vh;
+    min-height: 73rem;
+    overflow-x: hidden;
+}
+
+body {
+    background: linear-gradient(167.96deg, #8257E5 0%, #271A45 100%);
+    color: rgb(0, 0, 0);
+    font-family: 'Rubik', sans-serif;
+    letter-spacing: -0.02em;
+    font-weight: 400;
+    font-size: 1.6rem;
+
+    display: grid;
+    place-content: center;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 2.4rem;
+
+    margin-bottom: 2rem;
+}
+
+.ticket {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+
+    
+    filter: drop-shadow(0px 4px 24px rgba(0, 0, 0, 0.25));
+    border-radius: 2.4rem;
+    gap: 2.4rem;
+    padding: 2.4rem 3.2rem;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.info {
+    opacity: .64;
+    font-style: normal;
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+}
+
+.left-container {
+    text-align: left;
+}
+
+.right-container {
+    text-align: right;
+}
+
+.number-info {
+    opacity: .88;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.9rem;
+}
+
+.local-name {
+    opacity: .88;
+    font-size: 4rem;
+    line-height: 4.7rem;
+}
+
+.time {
+    line-height: 1.9rem;
+}
+
+.collum {
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 1.6rem;
+}
+
+#footer-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: .8rem;
+}
+
+#qr-code {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.warning {
+    opacity: 0.8;
+    line-height: 2rem;
+    text-align: center;
+}
+
+#body {
+    border-top: .1rem dashed rgba(128, 128, 128, 0.712);
+    border-bottom: .1rem dashed rgba(128, 128, 128, 0.712);
+}
+
+.purple {
+    padding: .4rem .8rem;
+    border-radius: .8rem;
+    color: white;
+    background-color: #633BBC;
+    text-align: center;
+    margin-top: .8rem;
+    width: fit-content;
+}
+
+footer {
+    color: #FFFFFF;
+
+    opacity: 0.64;
+    text-align: center;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+
+    width: 269.14px;
+    display: block;
+    margin-top: 2rem;
+    margin-inline: auto;
+}

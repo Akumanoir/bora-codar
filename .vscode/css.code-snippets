@@ -3,6 +3,12 @@
       "scope": "css",
       "prefix": "init",
       "body": [
+        "@charset \"UTF-8\";",
+        "",
+        ":root {",
+        "\tfont-size: 62.5%;",
+        "}",
+        "",
         "* {",
         "\tmargin: 0;",
         "\tpadding: 0;",
@@ -11,13 +17,14 @@
         "\t-moz-osx-font-smoothing: grayscale;",
         "}",
         "",
-        ":root {",
-        "\tfont-size: 62.5%;",
+        "html, body {",
+        "\twidth: 100vw;",
+        "\theight: 100vh;",
         "}",
         "",
         "body {",
         "\tfont-size: 1.6rem;$1",
-        "}"
+        "}",
       ],
       "description": "Init my CSS"
     }
