@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Site de carnaval</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section class="grid" id="heading">
+    <img src="assets/bg-bottom-right.png" alt="" id="bg-header-right">
+    <header class="grid">
+      <article class="text-center grid">
+        <span class="span-highlight">
+          find your block
+        </span>
+        <h1>
+          Encontre os <span>melhores blocos</span> de carnaval de 2023
+        </h1>
+      </article>
+      <form action="#" method="get" class="grid">
+        <div class="input-wrapper grid">
+          <img src="assets/magnifying-glass.svg" alt="lupa de pesquisa">
+          <label for="name-search">Nome:</label>
+          <input type="text" name="name-search" id="name-search" placeholder="Pesquise por nome">
+        </div>
+        <div class="input-wrapper grid">
+          <img src="assets/location-sign.svg" alt="Pin de localização">
+          <label for="city-search">Cidade: </label>
+          <select name="city-search" id="city-search">
+            <option value="#" disabled selected>Selecione uma cidade</option>
+            <optgroup label="Região Metropolitana de Florianópolis">
+              <option value="Florianópolis">Florianópolis</option>
+              <option value="Palhoça">Palhoça</option>
+              <option value="Águas-Mornas">Águas Mornas</option>
+              <option value="São-José">São José</option>
+              <option value="Leoberto-Leal">Leoberto Leal</option>
+              <option value="Santo-Amaro-da-Imperatriz">Santo Amaro da Imperatriz</option>
+              <option value="Canelinha">Canelinha</option>
+              <option value="Tijucas">Tijucas</option>
+              <option value="Nova Trento">Nova Trento</option>
+              <option value="Garopaba">Garopaba</option>
+              <option value="Imbituba">Imbituba</option>
+            </optgroup>
+          </select>
+        </div>
+        <input type="submit" value="Buscar agora" class="button">
+      </form>
+    </header>
+  </section>
+  <main>
+    <section id="content" class="grid">
+      <div class="grid" id="title-container">
+        <h2>Blocos recomendados</h2>
+        <div id="button-container">
+          <button type="button" class="button">lista</button>
+          <button type="button" class="button deactivated">mapa</button>
+        </div>
+      </div>
+      <div class="grid" id="grid-cards-container">
+        <div class="grid-cards">
+          <div class="img">
+            <img src="assets/python.jpg" alt="Moço de cartola andando em uma multidão no carnaval.">
+          </div>
+          <div class="content grid">
+            <h3>O Python do vovô não sobe mais</h3>
+            <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.</p>
+            <div class="local">
+              <img src="assets/location-sign.svg" alt="Pin de localização">
+              <p>Grande Florianópolis - SC</p>
+            </div>
+          </div>
+        </div>
+        <div class="grid-cards">
+          <div class="img">
+            <img src="assets/null.jpg" alt="Fitas e enfeites de carnaval caídas no chão.">
+          </div>
+          <div class="content grid">
+            <h3>Todo mundo null</h3>
+            <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.</p>
+            <div class="local">
+              <img src="assets/location-sign.svg" alt="Pin de localização">
+              <p>Grande Florianópolis - SC</p>
+            </div>
+          </div>
+        </div>
+        <div class="grid-cards">
+          <div class="img">
+            <img src="assets/exception.jpg" alt="Multidão em um bloco de carnaval.">
+          </div>
+          <div class="content grid">
+            <h3>Hoje dou exception</h3>
+            <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.</p>
+            <div class="local">
+              <img src="assets/location-sign.svg" alt="Pin de localização">
+              <p>Grande Florianópolis - SC</p>
+            </div>
+          </div>
+        </div>
+        <div class="grid-cards">
+          <div class="img">
+            <img src="assets/node.jpg" alt="Homem vestido de índio apontado o dedo indicador direto para a câmera.">
+          </div>
+          <div class="content grid">
+            <h3>Manda Node</h3>
+            <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.</p>
+            <div class="local">
+              <img src="assets/location-sign.svg" alt="Pin de localização">
+              <p>Grande Florianópolis - SC</p>
+            </div>
+          </div>
+        </div>
+        <div class="grid-cards">
+          <div class="img">
+            <img src="assets/back-end.jpg" alt="Três mulheres posando para a foto com um palhaço entre elas">
+          </div>
+          <div class="content grid">
+            <h3>Só no back-end</h3>
+            <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.</p>
+            <div class="local">
+              <img src="assets/location-sign.svg" alt="Pin de localização">
+              <p>Grande Florianópolis - SC</p>
+            </div>
+          </div>
+        </div>
+        <div class="grid-cards">
+          <div class="img">
+            <img src="assets/ruby.jpg" alt="Homem tocando um intrumento de assopro no meio de um bloco de carnaval">
+          </div>
+          <div class="content grid">
+            <h3>Esse anel não é de Ruby</h3>
+            <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.</p>
+            <div class="local">
+              <img src="assets/location-sign.svg" alt="Pin de localização">
+              <p>Grande Florianópolis - SC</p>
+            </div>
+          </div>
+        </div>
+        <div class="grid-cards">
+          <div class="img">
+            <img src="assets/csharp.jpg" alt="Três mulheres posando para a foto, as duas do lado esquerdo estão com o braço direito levantado.">
+          </div>
+          <div class="content grid">
+            <h3>Pimenta no C# dos outros é refresco</h3>
+            <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.</p>
+            <div class="local">
+              <img src="assets/location-sign.svg" alt="Pin de localização">
+              <p>Grande Florianópolis - SC</p>
+            </div>
+          </div>
+        </div>
+        <div class="grid-cards">
+          <div class="img">
+            <img src="assets/cache.jpg" alt="Multidão em um bloco de carnaval. Em foco está um homem de boné vermelho de costas.">
+          </div>
+          <div class="content grid">
+            <h3>EnCACHE aqui</h3>
+            <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.</p>
+            <div class="local">
+              <img src="assets/location-sign.svg" alt="Pin de localização">
+              <p>Grande Florianópolis - SC</p>
+            </div>
+          </div>
+        </div>
+        <div class="grid-cards">
+          <div class="img">
+            <img src="assets/java.jpg" alt="Mulher fantasiada sorrindo para a câmera. A fantasia dela é de tema índigena, com pintura no rosto.">
+          </div>
+          <div class="content grid">
+            <h3>Não valho nada mas JAVA li</h3>
+            <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.</p>
+            <div class="local">
+              <img src="assets/location-sign.svg" alt="Pin de localização">
+              <p>Grande Florianópolis - SC</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
