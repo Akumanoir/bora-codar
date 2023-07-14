@@ -22,15 +22,15 @@
           Encontre os <span>melhores blocos</span> de carnaval de 2023
         </h1>
       </article>
-      <form action="#" method="get" class="grid">
+      <form action="#" method="get">
         <div class="input-wrapper grid">
+          <label for="name-search" class="sr-only">Pesquise por nome: </label>
           <img src="assets/magnifying-glass.svg" alt="lupa de pesquisa">
-          <label for="name-search">Nome:</label>
-          <input type="text" name="name-search" id="name-search" placeholder="Pesquise por nome">
+          <input type="search" name="name-search" id="name-search" placeholder="Pesquise por nome">
         </div>
-        <div class="input-wrapper grid">
+        <div class="input-wrapper select grid">
+          <label for="city-search" class="sr-only">Selecione uma cidade</label>
           <img src="assets/location-sign.svg" alt="Pin de localização">
-          <label for="city-search">Cidade: </label>
           <select name="city-search" id="city-search">
             <option value="#" disabled selected>Selecione uma cidade</option>
             <optgroup label="Região Metropolitana de Florianópolis">
@@ -47,8 +47,9 @@
               <option value="Imbituba">Imbituba</option>
             </optgroup>
           </select>
+          <img src="assets/dropdow.svg" alt="Selecione uma cidade" id="dropdown">
         </div>
-        <input type="submit" value="Buscar agora" class="button">
+        <input type="submit" value="Buscar agora" class="btn primary">
       </form>
     </header>
   </section>
@@ -57,8 +58,8 @@
       <div class="grid" id="title-container">
         <h2>Blocos recomendados</h2>
         <div id="button-container">
-          <button type="button" class="button">lista</button>
-          <button type="button" class="button deactivated">mapa</button>
+          <button type="button" class="btn primary" id="list">lista</button>
+          <button type="button" class="btn secondary" is="map">mapa</button>
         </div>
       </div>
       <div class="grid" id="grid-cards-container">
@@ -180,7 +181,11 @@
           </div>
         </div>
       </div>
+      <div id="map" class="toggle">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d452477.86614293145!2d-49.24879767875076!3d-27.625032961501045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9527395239a50a3d%3A0x3547b6c400b37329!2sRegi%C3%A3o%20Metropolitana%20de%20Florian%C3%B3polis%2C%20SC!5e0!3m2!1spt-BR!2sbr!4v1686860067490!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
     </section>
   </main>
+  <script src="main.js"></script>
 </body>
 </html>

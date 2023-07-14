@@ -27,10 +27,6 @@ body * {
     font-family: var(--font);
 }
 
-#app * {
-    /*border: 1px solid red;*/
-}
-
 #app {
     display: grid;
     grid-template-columns: max-content max-content;
