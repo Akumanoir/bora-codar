@@ -1,35 +1,38 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import "./style/App.css"
+import arrow from "./assets/arrow-exchange.svg"
+import chart from "./assets/chart.svg"
+import Currency from "./components/currency/index"
 
-function App() {
-  const [count, setCount] = useState(0)
+export default function App() {
+  // const options = ["USD", "EUR", "GBP", "BRL"]
+  // const selectOption = document.querySelector(".select")
 
+  // options.map((element) => {
+  //   const optionElement = document.createElement("option")
+  //   optionElement.setAttribute("value", `${element}`)
+  //   optionElement.innerHTML = element
+
+  //   selectOption.appendChild(optionElement)
+  // })
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <main>
+        <div id="conversor" className="wrapper">
+          <h1>Conversor de moedas</h1>
+          <div className="currency-wrapper">
+            <Currency />
+            <img
+              src={arrow}
+              alt="flecha para inverter a posição do conversor de moedas"
+            />
+            <Currency />
+          </div>
+        </div>
+        <div id="exchange-rate" className="wrapper">
+          <h1>Taxa de Câmbio</h1>
+          <img src={chart} alt="ué" />
+        </div>
+      </main>
     </>
   )
 }
-
-export default App

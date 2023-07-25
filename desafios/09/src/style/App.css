@@ -1,0 +1,75 @@
+.light-mode {
+  --highlight: #7C3AED;
+  --surface-secondary: #EDE9FE;
+  --text-primary: #0F172A;
+}
+main {
+  border-radius: 1.6rem;
+  box-shadow: .0rem .4rem 3.2rem .0rem rgba(15, 23, 42, 0.15);
+  width: fit-content;
+
+  padding: 6.4rem 8rem;
+  display: grid;
+  gap: 6.4rem;
+}
+
+.wrapper {
+  display: grid;
+  gap: 1.6rem;
+}
+
+.currency-wrapper {
+  display: flex;
+  gap: 1.6rem;
+}
+
+.currency-container {
+  border-radius: .8rem;
+  border: .15rem solid var(--highlight);
+
+  display: flex;
+  overflow: hidden;
+}
+
+.currency {
+  background-color: var(--surface-secondary);
+
+  position: relative;
+}
+
+.currency::before {
+  content: "";
+  display: block;
+  width: .1rem;
+  height: 2.4rem;
+  background: #94A3B8;
+
+  position: absolute;
+  left: 0;
+  top: 1.5rem;
+}
+
+.frame {
+  padding: 1.6rem;
+}
+
+.frame input, .frame select {
+  border: none;
+  background-color: transparent;
+  width: 100%;
+}
+
+.frame input:focus-within, .frame select:focus-within {
+  outline: none;
+}
+
+.frame select {
+  cursor: pointer;
+  /* border-left: .1rem solid #94A3B8; */
+}
+
+h1 {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+}
