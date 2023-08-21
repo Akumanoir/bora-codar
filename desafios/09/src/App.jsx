@@ -4,16 +4,6 @@ import chart from "./assets/chart.svg"
 import Currency from "./components/currency/index"
 
 export default function App() {
-  // const options = ["USD", "EUR", "GBP", "BRL"]
-  // const selectOption = document.querySelector(".select")
-
-  // options.map((element) => {
-  //   const optionElement = document.createElement("option")
-  //   optionElement.setAttribute("value", `${element}`)
-  //   optionElement.innerHTML = element
-
-  //   selectOption.appendChild(optionElement)
-  // })
   return (
     <>
       <main>

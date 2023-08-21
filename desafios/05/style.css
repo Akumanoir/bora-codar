@@ -27,7 +27,7 @@ body * {
 
 #calculator {
     width: 356px;
-    height: 566px;
+    /* height: 566px; */
 
     background: #2D2A37;
     box-shadow: 
@@ -58,12 +58,14 @@ body * {
 #result {
     display: flex;
     justify-content: space-between;
+    gap: 5px;
 
     margin-top: 8px;
 }
 
 #result span {
     min-height: 50.39px;
+    word-break: break-all;
     font-size: 36px;
     line-height: 140%;
     color: #EBEBEB;
