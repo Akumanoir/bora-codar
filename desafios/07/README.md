@@ -1,4 +1,4 @@
-<h1 align="center"> Player de Música </h1>
+<h1 align="center"> Site de Carnaval </h1>
 
 
 <p align="center">
@@ -12,18 +12,17 @@
 <br>
 
 <p align="center">
-  <img src="https://github.com/maykbrito/boracodar/raw/main/01/.github/preview.jpg" width="100%">
+  <img src="https://github.com/maykbrito/boracodar/raw/main/07/.github/preview.jpg" width="100%">
 </p>
 
 ## 🚀 Tecnologias
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 
-- HTML e CSS
+- HTML, CSS e Javascript
 - Git e Github
 - Figma
 
 ---
 
 [Voltar](../../README.md)
-

@@ -1,4 +1,4 @@
-<h1 align="center"> Player de Música </h1>
+<h1 align="center"> Dashboard </h1>
 
 
 <p align="center">
@@ -12,7 +12,7 @@
 <br>
 
 <p align="center">
-  <img src="https://github.com/maykbrito/boracodar/raw/main/01/.github/preview.jpg" width="100%">
+  <img src="https://github.com/maykbrito/boracodar/raw/main/08/.github/preview.jpg" width="100%">
 </p>
 
 ## 🚀 Tecnologias
@@ -26,4 +26,3 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 ---
 
 [Voltar](../../README.md)
-
